@@ -215,26 +215,6 @@ describe('Recipes', function() {
   });
 
 
-//----- NIKO HELP HERE -----
-  it('should return an error on POST if any fields are missing, or fields are wrong type', function() {
-    // const errorRecipe = [{name: 'bp coffee'}, {name: "bp coffee", ingredients: "butter"}, {ingredients: "butter"}];
-    const errorRecipe = [{name: "bp coffee", apple: ["apples"], ingredients: ["bananas"]}];
-
-    errorRecipe.forEach(function(input){
-      return chai.request(app)
-      .post('/recipes')
-      .send(input)
-      .then(function(res) {
-        console.log(res.status);
-        expect(res).to.have.status(200);
-      // })
-      // .then(function(res) {
-      //   expect(res).to.not.have.status(201);
-      });
-    });
-
-  });
-
 // test strategy:
   //  1. initialize some update data (we won't have an `id` yet)
   //  2. make a GET request so we can get an item to update
