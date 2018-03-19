@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: uzdNTt29xIcaEj50s2Uw50/1nka5t4Z8E29f3hG3IK6UBF0qh4wVbVBva4lPhZgfcmWz447vv2mYsrsNGgrfvBOO3cRZnOvcn8NzuTm+PCgSgVAP4zsgviuhOV3XP1FmovqJFS2Hn5dukt1+BCWfLej6XL9GK+M0Ifx+gyaWJaacli2JLH/OOuKHZi9k1arAr0VlPUVVfcKQ+3zy4k9FkrZU3mCo5Pns+mH20ZP538OQ7tIaS1MkuQksc0YVfb+3utt6phftjrY02c5u/O1MvQn6Zc6WT8XqfgunjKRzCNHnaK/myMTEgB7Hd4WlEmMJ+u716fMghgm7grSyLpB/Xeci3001Lj6MNaHU/Nr0BGFZzvq0TuUT9jOwFPMJn2wpDpq9E4+s+FF51uGX5x80waqcwMYRl9mXyBeMpPXpzo56KH40C7v7qRgNz2Dq32OvpHAkIPw3zk3BbykJuUHCLb/yilSP4dB8PB6W3hoF5IQYN61+qMCuSwyFFWKtqNzSVOg//aBxrxqmMY/MdG9ztISidWIXo6HyTLV4AtcLaWegGf/G5/YJEIw60Ke5I6tdQ7w/iGTx7t0KuoeazbJFY+wukAyfFR81EjTHNZEE5GkPbnE28tjynkQBockOMkmFxoiq0ghMZMv9FCpDnfFN0rOrtKUXOhLzKzsbRBmfqwE=
+  app: calm-coast-61093
+  on:
+    repo: SeanCodyDev/shopping-list-integration-test
